@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-resources :cocktails, only: [:show, :new, :create]
+  # cocktails => index / show / new / create
+  resources :cocktails, only: [:show, :new, :create] do
+    # para eu estar no new e no create do dose eu PRECISO
+    # do id do cocktail
+    resources :doses, only: [:new, :create]
+  end
+  resources :doses, only: [:destroy]
 
-# Redirect the user to index page as "home" page
-root to: 'cocktails#index'
+  root to: 'cocktails#index'
 end
