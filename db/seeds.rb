@@ -17,6 +17,6 @@ ingredient_list["drinks"].each do |ingredient|
   Ingredient.create(name: ingredient["strIngredient1"])
 end
 
-Cocktail.create(name: "caiprinha")
+Cocktail.create(name: "caipirinha")
 Cocktail.create(name: "mojito")
 Cocktail.create(name: "água com")
