@@ -1,32 +1,110 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
-  <div class="container">
-    <h1>Le Wagon brings <strong>tech skills</strong> to <strong>creative people</strong>!</h1>
-    <p>Change your life and learn to code at one of our campuses around the world.</p>
-    <a class="btn btn-flat" href="#">Apply now</a>
-  </div>
-</div>
-
-
-
-<div class="banner" style="background-image: url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
-  <div class="container">
-    <h1>Alguma coisa</h1>
-
-  </div>
-</div>
-
-<h1>Cocktails Bar</h1>
-    <ul>
-    <% @cocktails.each do |cocktail| %>
-      <li>
-        <%= link_to cocktail.name, cocktail_path(cocktail) %>
-        </li>
+  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+      <%= link_to "#", class: "navbar-brand" do %>
+        <%= image_tag "https://res.cloudinary.com/lucaslbl1/image/upload/v1613918229/noun_Cocktail_Glass_195938_bqp0n3.png" %>
       <% end %>
-    </ul>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <h1>Lux Cocktails Bar</h1>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active mr-3">
+            <%= link_to 'Add a cocktail', new_cocktail_path, class: "nav-link" %>
+          </li>
+        </ul>
+      </div>
+  </div>
+
+
+  <div class="banner" style="background-image: url(https://res.cloudinary.com/lucaslbl1/image/upload/v1613917095/pexels-lucian-potlog-3566120_aq77r9.jpg);">
+  </div>
   <hr>
-    <%= link_to 'Add a cocktail', new_cocktail_path, class: 'btn btn-primary' %>
 
+  <div class="d-flex justify-content-center flex-wrap">
+      <div class="card m-2 card-main" style="width: 22rem;">
+        <div class="card-image">
+          <img class="card-img-top" src="https://res.cloudinary.com/lucaslbl1/image/upload/v1613916712/pexels-charlotte-may-5946655_z46h8u.jpg">
+        </div>
+        <div class="card-body">
+          <a class="card-link card-title">
+            <h5 class="card-title"> Bloody Mary</h5>
+          </a>
+          <hr>
+          <div class="d-flex">
+            <a class="card-link" href="/cocktails/6">Info</a>
+          </div>
+        </div>
+      </div>
 
-<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-  Breakfast
-</div>
+      <div class="card m-2 card-main" style="width: 22rem;">
+        <div class="card-image">
+          <img class="card-img-top" src="https://res.cloudinary.com/lucaslbl1/image/upload/v1613916719/pexels-ekrulila-2615326_kh6rkt.jpg">
+        </div>
+        <div class="card-body">
+          <a class="card-link card-title" href="/cocktails/7">
+            <h5 class="card-title"> Breakfast Martini</h5>
+          </a><hr>
+          <div class="d-flex">
+            <a class="card-link" href="/cocktails/7">Info</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card m-2 card-main" style="width: 22rem;">
+        <div class="card-image">
+          <img class="card-img-top" src="https://res.cloudinary.com/lucaslbl1/image/upload/v1613916723/pexels-isabella-mendes-1304540_eh8i01.jpg">
+        </div>
+        <div class="card-body">
+          <a class="card-link card-title" href="/cocktails/8">
+            <h5 class="card-title">Negroni</h5>
+          </a><hr>
+          <div class="d-flex">
+            <a class="card-link" href="/cocktails/8">Info</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card m-2 card-main" style="width: 22rem;">
+        <div class="card-image">
+          <img class="card-img-top" src="https://res.cloudinary.com/lucaslbl1/image/upload/v1613916720/pexels-kristina-paukshtite-1280364_y7vtwj.jpg">
+        </div>
+        <div class="card-body">
+          <a class="card-link card-title" href="/cocktails/9">
+            <h5 class="card-title">Aperol Spritz</h5>
+          </a><hr>
+          <div class="d-flex">
+            <a class="card-link" href="/cocktails/9">Info</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card m-2 card-main" style="width: 22rem;">
+        <div class="card-image">
+          <img class="card-img-top" src="https://res.cloudinary.com/lucaslbl1/image/upload/v1613916719/pexels-madison-inouye-2691360_ibxyan.jpg">
+        </div>
+        <div class="card-body">
+          <a class="card-link card-title" href="/cocktails/10">
+            <h5 class="card-title">Mojito</h5>
+          </a><hr>
+          <div class="d-flex">
+            <a class="card-link" href="/cocktails/10">Info</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card m-2 card-main" style="width: 22rem;">
+        <div class="card-image">
+          <img class="card-img-top" src="https://res.cloudinary.com/lucaslbl1/image/upload/v1613916720/pexels-vin%C3%ADcius-caricatte-2336667_dkifrc.jpg">
+        </div>
+        <div class="card-body">
+          <a class="card-link card-title" href="/cocktails/11">
+            <h5 class="card-title">Screw Driver</h5>
+          </a><hr>
+          <div class="d-flex">
+            <a class="card-link" href="/cocktails/11">Info</a>
+          </div>
+        </div>
+      </div>
