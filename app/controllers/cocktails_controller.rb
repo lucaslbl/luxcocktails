@@ -24,10 +24,12 @@ class CocktailsController < ApplicationController
     @dose = Dose.new
   end
 
-  def edit;  end
+  def edit
+  end
 
   def update
     @cocktail.update(cocktail_params)
+    @cocktail.save
     redirect_to cocktail_path(@cocktail)
   end
 
