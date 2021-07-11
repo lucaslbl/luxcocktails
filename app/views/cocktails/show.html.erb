@@ -1,16 +1,56 @@
+  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+      <%= link_to "#", class: "navbar-brand" do %>
+        <%= image_tag "https://res.cloudinary.com/lucaslbl1/image/upload/v1613918229/noun_Cocktail_Glass_195938_bqp0n3.png" %>
+      <% end %>
 
-<h1>Esse é o drink: <%= @cocktail.name %></h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill if @cocktail.photo.attached? %>
+      <h1>Lux Cocktails Bar</h1>
 
-<ul>
-   <% @cocktail.doses.each do |dose| %>
-        <li>
-          <%= dose.description %> <%= dose.ingredient.name %> <%= link_to "remova essa dose", dose_path(dose), method: :delete %>
-        </li>
-  <% end %>
-</ul>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active mr-3">
+            <%= link_to 'Add a cocktail', new_cocktail_path, class: "nav-link" %>
+          </li>
+        </ul>
+      </div>
+  </div>
 
-<%= link_to "Crie a sua dose!", new_cocktail_dose_path(@cocktail) %>
-<hr>
-<%= link_to 'Back to all Cocktails', root_path %>
+  <div class="container-fluid w-100 h-auto m-0 p-0 flex-wrap">
+
+  <div class="d-flex">
+    <%= cl_image_tag @cocktail.photo.key, class:'img-fluid w-100' %>
+    <h1 class="card-title text-center" id="show-top"> <%= @cocktail.name %></h1>
+    <div class="text-right">
+    <%= link_to "Edit", edit_cocktail_path(@cocktail), class:"btn btn-success m-3" %>
+    <%= link_to "Delete", cocktail_path(@cocktail), method: :delete, data: { confirm: "Are you sure?" }, class:"btn btn-danger m-3" %>
+    </div>
+  </div>
+  <div class="container d-flex justify-content-around flex-wrap show">
+    <div class="card text-dark mb-3" id="card-description" style="max-width: 30rem;">
+      <div class="card-body">
+        <h3 class="card-title">Description</h3>
+        <div class="d-flex flex-column bd-highlight">
+          <% @cocktail.doses.each do |dose| %>
+            <div>
+              <strong><%= dose.ingredient.name %></strong>
+              <%= dose.description %>
+              <%= link_to "delete", dose_path(dose), method: :delete, data: { confirm: "Are you sure?" }%>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <div class="card text-dark" id="card-description" style="max-width: 50rem;">
+      <div class="card-body">
+        <h3 class="card-title">Add ingredients</h3>
+        <%= render "doses/new", cocktail: @cocktail, dose: @dose %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= link_to 'Back Home Page', root_path %>
