@@ -1,18 +1,18 @@
-  <div class="navbar navbar-expand-sm navbar-light navbar">
-    <%= link_to "Lux Cocktail`s", cocktails_path, class: "nav-item" %>
-    <%= image_tag "https://res.cloudinary.com/lucaslbl1/image/upload/c_scale,w_125/v1613918229/noun_Cocktail_Glass_195938_bqp0n3.png" %>
-        
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<div class="navbar navbar-expand-sm navbar-light navbar">
+  <%= link_to "Lux Cocktail`s", cocktails_path, class: "nav-item" %>
+  <%= image_tag "https://res.cloudinary.com/lucaslbl1/image/upload/c_scale,w_125/v1613918229/noun_Cocktail_Glass_195938_bqp0n3.png" %>
+      
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active mr-3">
-          <%= link_to new_cocktail_path, class: "nav-link" do %>
-            <button type="button" class="btn btn-default">Add Cocktail</button>
-          <% end %>
-        </li>
-      </ul>
-    </div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active mr-3">
+        <%= link_to new_cocktail_path, class: "nav-link" do %>
+          <button type="button" class="btn btn-default">Add Cocktail</button>
+        <% end %>
+      </li>
+    </ul>
   </div>
+</div>

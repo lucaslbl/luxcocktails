@@ -24,7 +24,7 @@ class CocktailsController < ApplicationController
     @dose = Dose.new
   end
 
-  def edit; end
+  def edit;  end
 
   def update
     @cocktail.update(cocktail_params)
@@ -33,7 +33,7 @@ class CocktailsController < ApplicationController
 
   def destroy
     @cocktail.destroy
-    redirect_to cocktail_path(@cocktail)
+    redirect_to cocktails_path
   end
 
   private

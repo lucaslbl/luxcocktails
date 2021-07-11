@@ -1,11 +1,72 @@
-.card-title {
-  color: black;
+.card {
+  border: none;
+}
+
+.card-img-top {
+  height: 280px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.card-main {
+  height: 400px;
+  border-radius: 20px;
+}
+
+.img-fluid {
+  height: 400px;
+  object-fit: cover;
+  z-index: -1;
+  width: 100%;
+  position: absolute;
+}
+
+.show {
+  z-index: 100;
+  position: relative;
+  top: 200px;
+}
+
+#show-top {
+  position: relative;
+  top: 150px;
+  left: 100px;
+  color: $white;
+  margin: 0 auto;
+  font-size: 80px;
+}
+
+#card-description {
+  width: 500px;
 }
 
 .card-link {
-  color: black;
+  color: $light-beige;
 }
-.card-link:hover {
-  color: #f27979;
-  transition: background-color 0.5s ease;
+
+.card-title {
+  color: $black;
+  font-size: 25px;
+  text-align: center;
+}
+
+.card-edit {
+  color: $navy;
+}
+
+.card-edit:hover {
+  color: $navy;
+}
+
+.card-delete {
+  color: #e15845;
+}
+
+.card-delete:hover {
+  color: #9e3d31;
+}
+
+.card-img-bubble {
+  height: 280px;
+  object-fit: cover;
 }
