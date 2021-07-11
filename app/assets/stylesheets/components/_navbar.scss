@@ -1,12 +1,35 @@
-.navbar-lewagon {
+.navbar {
   justify-content: space-between;
-  background: white;
+  background: $navy;
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
+.navbar .navbar-brand img {
   width: 60px;
+}
+
+.btn {
+  background-color: $light-orange;
+  border-color: $light-beige;
+  color: $light-beige;
+  font-size: 20px;
+}
+
+.btn:hover {
+  text-decoration: none;
+  color: $beige;
+}
+
+.nav-item {
+  font-family: "Parisienne", cursive;
+  font-size: 50px;
+  margin-left: 20px;
+}
+
+.nav-item:hover {
+  text-decoration: none;
+  color: $light-beige;
 }

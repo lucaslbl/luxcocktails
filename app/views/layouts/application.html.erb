@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lux Cocktail Bar</title>
+    <title>Lux Cocktail`s</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -13,6 +13,9 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="wrapper">
+      <%= render "shared/navbar" %>
+      <%= yield %>
+    </div>  
   </body>
 </html>
