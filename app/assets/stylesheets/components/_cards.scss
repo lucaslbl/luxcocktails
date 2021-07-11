@@ -41,7 +41,11 @@
 }
 
 .card-link {
-  color: $light-beige;
+  color: $light-orange;
+}
+
+.card-link:hover {
+  color: $light-orange;
 }
 
 .card-title {
