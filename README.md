@@ -27,7 +27,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 $ git clone <git@github.com:lucaslbl/luxcocktails.git>
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd rails-mister-cocktail
+$ cd luxcocktails
 
 # Instale as dependências
 $ Bundle Install
