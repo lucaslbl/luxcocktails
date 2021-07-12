@@ -24,7 +24,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 ```bash
 # Clone este repositório
-$ git clone <git@github.com:lucaslbl/rails-mister-cocktail.git>
+$ git clone <git@github.com:lucaslbl/luxcocktails.git>
 
 # Acesse a pasta do projeto no terminal/cmd
 $ cd rails-mister-cocktail
