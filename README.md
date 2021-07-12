@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Lux Cocktail`s
 
-Things you may want to cover:
+Lux Cocktail`s is a cocktail recipe organizer.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Use
+Add own cocktails, check their ingredients, edit or delete if desired.
