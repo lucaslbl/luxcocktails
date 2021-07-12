@@ -8,34 +8,34 @@
 - [x] Add, Edit and Delete your own cocktails
 - [x] Add and Delete cocktails doses
 
-### 🛠 Tecnologias
+### 🛠  Frameworks
 
-A seguinte ferramentas foram usadas na construção do projeto:
+The following frameworks were used to build this application:
 
 - [Ruby on Rails](https://rubyonrails.org/)
 
-### Pré-requisitos
+### Pré-requists
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Ruby on Rails 6.0.3.5](https://rubyonrails.org/). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-### 🎲 Rodando o Back End (servidor)
+### 🎲 Running on Back End (server)
 
 ```bash
-# Clone este repositório
+# Clone this repository
 $ git clone <git@github.com:lucaslbl/rails-mister-cocktail.git>
 
-# Acesse a pasta do projeto no terminal/cmd
+# Open folder on terminal/cmd
 $ cd rails-mister-cocktail
 
-# Instale as dependências
+# Install all dependencies
 $ Bundle Install
 
-# Execute a aplicação em modo de desenvolvimento
+# Run the application in development mode
 $ rails s
 
-# O servidor inciará na porta:3000 - acesse <http://localhost:3000>
+# The server will start at port: 3000 - go to http://localhost:3000
 ```
 
 ### Heroku
